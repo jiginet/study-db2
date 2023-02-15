@@ -18,6 +18,9 @@ repositories {
 	mavenCentral()
 }
 
+ext["hibernate.version"] = "5.6.5.Final"
+
+
 dependencies {
 	//JdbcTemplate 추가
 //	implementation 'org.springframework.boot:spring-boot-starter-jdbc'
@@ -33,6 +36,8 @@ dependencies {
 
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.apache.commons:commons-lang3:3.12.0'
+
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
